@@ -1,0 +1,37 @@
+body{background-color: rgb(24, 15, 15);
+color: aqua;
+text-transform: capitalize;}
+h1{text-align: center;
+background-color: chartreuse;
+border: 5px solid brown;
+}
+#division{height: 75px;
+width: 100px;
+color: blueviolet;
+background-color: cornflowerblue;
+border: 5px solid blue;}
+button{border: 5px solid aqua;}
+div{text-align: center;
+height: 100px;
+width: 100px;
+border: 5px solid aqua;
+background-color:whitesmoke;
+color: white;
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 50px; /*Could use shorthand for this too*/
+}
+#Div1{border-radius: 15px;
+margin: 25px;}
+#Div2{border-radius: 25%;}
+#Div3{border-radius: 50%; /*For creating circles*/
+margin: 25px;} 
+h3{background-color: blue;
+color: aliceblue;
+display: inline;}
+h4{background-color: chartreuse;}
+h5{text-align: center;
+text-transform: capitalize;
+color: rgba(255,0,0,0.5);} /* 'a' for setting opacity(0 to 1) of red color */
+
+

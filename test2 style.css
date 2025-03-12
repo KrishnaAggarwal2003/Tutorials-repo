@@ -1,0 +1,11 @@
+body{background-color: black;
+color: cadetblue;}
+/*question 01*/
+h1{color: cadetblue;
+text-align: center;
+text-transform: capitalize;}
+/*question 02*/
+body{font-family: sans-serif;}
+/*question 03*/
+#in1{font-size: 10px;}
+#out1{font-size: 25px;}

@@ -1,0 +1,14 @@
+body{background-color: black;
+background-image: url(miles-moralles\ spiderman.jpg);
+background-size: cover;}
+h1{text-align: center;
+text-decoration: underline;
+font-family: serif;}
+
+#message{color: blue;
+position: fixed;
+height: 100px;
+width: 300px;
+text-align: center;
+float: right;
+background-color: black;}

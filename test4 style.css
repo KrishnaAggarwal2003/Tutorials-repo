@@ -1,0 +1,16 @@
+body{background-color: black;
+color: white;}
+div{background-color: black;
+color: white;
+border: 5px solid whitesmoke;
+height: 50px;
+display: block;}
+h3{font-size: 25px;
+color: yellow;
+display: inline;}
+.hello{margin: 100px;}
+marquee{color: white;
+font-size: 20px;
+background-color: black;
+display: block;
+margin: 515px 100px 50px 50px;}

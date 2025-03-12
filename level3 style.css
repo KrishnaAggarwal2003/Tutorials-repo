@@ -1,0 +1,20 @@
+body{background-color: black;
+color: whitesmoke;}
+#heading{text-align: center;
+text-transform: uppercase;
+text-decoration: solid underline;}
+#box1{background-color: green;
+height: 100px;
+width: 200px;}
+#box2{background-color: yellow;
+height: 50%;
+width: 50%;
+color: black;
+margin: 25% ;
+padding-top: 5px;
+}
+/*Position tags*/
+
+div{height: 100px;
+width: 100px;
+color: black;}
