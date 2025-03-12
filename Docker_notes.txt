@@ -1,0 +1,62 @@
+# Docker helps containerize applications with all their dependencies, making them portable and easy to run anywhere.
+
+# Helping in replicating a local environment into another syste, without the user needing to install all the dependencies.
+
+# Solves the classical problem of "It works on my machine"
+
+# Helps to build containers
+# Docker container and Docker imager, the major concepts.
+
+# Container -- a unit packed with app + dependencies
+This container can then be shared among the machines, and no need to manually install all the dependencies on another machine.
+
+# Properties of container:-
+1. Portable
+2. light-weight in nature
+
+# Docker image --  an executable file containing instructions for building container. 
+Docker image is a blueprint helping in creating containers.
+Similar to replation of class(docker image) --> object(docker container)
+
+What is shared among machines, is the docker image file which is then used to make the container onto the machine.
+
+# The changes done in the container won't have anything to do with your main(local) system.
+
+# Docker daemon(heart of docker) ---> the background service that runs on your system and manages all Docker-related operations. It is responsible for building, running, and managing containers on your machine.
+
+## Docker Commands:-
+1. docker pull IMAGE_NAME   ---> to extract & download the image file
+2. docker image   ---> To check the downloaded images
+3. docker run IMAGE_NAME    ---> To create the container from the image file 
+4. docker run -it IMAGE_NAME    ---> the container created would be in interactive mode
+5. docker ps -a    ---> to check all the present containers in the machine
+6. docker stop CONTD_NAME or ID ,, docker start CONTD_NAME or ID
+7. docker rmi IMAGE_NAME or ID   ---> to remove the image
+8. docker rm CONTD_NAME or ID    ---> to remove the container
+9. docker run -p8080:3306 IMAGE_NAME ---> Port binding i.e. to send the request from 8080(local port) to 3306(container port).
+
+
+# Docker image layers:-
+Container (the only mutable layer)
+Layer_2
+Layer_1
+Base_Layer
+
+# Docker v/s VM
+-- Any System generally could be simplified into 3 layers:-
+1. Application layer
+2. Host OS Kernel
+3. Hardware
+
+# A side note
+For a system, There are terminals like Bash shell(Linux) and cmd prompt(Windows) which act as the UI for user to interact with the OS. When user wants to do something in the machine, he gives the command to the terminal, which then send the request to the OS and following to the OS Kernel. Now, Kernel job is to supervise and interact with the hardware components. It translates the user request to the hardware instructions which lead to the execution of the user request by the hardware.
+
+# In Docker, the docker image when converted into the container uses the local host OS kernel for the virtualization of the application layer (for example ubuntu image, for the linux bash terminal). Due to this factor, it is lightweight but could cause the problems of incompatible OS kernel for interacting with hardware. That's why docker desktop helps in the image execution
+
+Whereas, VM's use it's own OS kernel instead of local OS kernel that's why it has very larger size than docker file but user would be able to run the aplication without any error on any local machine because the OS kernel won't be incompatible as it's using it's own.
+
+# Docker network ---> for interaction between multiple containers without the need of port. Could be helpful in projects where interaction between 2 containers is required.
+
+# Docker compose ---> tool for defining(creating a .ysml file for the Commands) and running multi-container aplications
+
+# Dockerizing an app ---> Converting the app into a docker image
